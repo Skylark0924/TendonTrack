@@ -1,0 +1,418 @@
+<mujoco model="TendonModel">
+
+    <include file="tendon_scene.xml"/>
+
+    <option timestep="0.002" tolerance="1e-10" jacobian="dense" gravity="0 0 -0.981" />
+    <!--collision="dynamic"/-->
+
+    <size nconmax="100" njmax="300" nstack="50000"/>
+
+    <worldbody>
+    <body name="rope20" pos="0 0 5" axisangle="0 1 0 180">
+        <body>
+        <geom type="capsule" pos="0 0 0.0000" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <!--joint type="hinge" pos="0 0 -0.0600" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 -0.0600" axis="0 1 0" damping="1.0000" stiffness="0.50"/-->
+        <site name="s_0_1_1" pos="-0.0700 0 -0.0600"/>
+        <site name="s_0_2_1" pos="0.0700 0 -0.0600"/>
+        <site name="s_0_3_1" pos="0 -0.0700 -0.0600"/>
+        <site name="s_0_4_1" pos="0 0.0700 -0.0600"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.1200" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.0600" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.0600" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_2" pos="-0.0700 0 0.0600"/>
+        <site name="s_0_2_2" pos="0.0700 0 0.0600"/>
+        <site name="s_0_3_2" pos="0 -0.0700 0.0600"/>
+        <site name="s_0_4_2" pos="0 0.0700 0.0600"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.2400" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.1800" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.1800" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_3" pos="-0.0700 0 0.1800"/>
+        <site name="s_0_2_3" pos="0.0700 0 0.1800"/>
+        <site name="s_0_3_3" pos="0 -0.0700 0.1800"/>
+        <site name="s_0_4_3" pos="0 0.0700 0.1800"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.3600" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.3000" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.3000" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_4" pos="-0.0700 0 0.3000"/>
+        <site name="s_0_2_4" pos="0.0700 0 0.3000"/>
+        <site name="s_0_3_4" pos="0 -0.0700 0.3000"/>
+        <site name="s_0_4_4" pos="0 0.0700 0.3000"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.4800" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.4200" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.4200" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_5" pos="-0.0700 0 0.4200"/>
+        <site name="s_0_2_5" pos="0.0700 0 0.4200"/>
+        <site name="s_0_3_5" pos="0 -0.0700 0.4200"/>
+        <site name="s_0_4_5" pos="0 0.0700 0.4200"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.6000" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.5400" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.5400" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_6" pos="-0.0700 0 0.5400"/>
+        <site name="s_0_2_6" pos="0.0700 0 0.5400"/>
+        <site name="s_0_3_6" pos="0 -0.0700 0.5400"/>
+        <site name="s_0_4_6" pos="0 0.0700 0.5400"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.7200" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.6600" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.6600" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_7" pos="-0.0700 0 0.6600"/>
+        <site name="s_0_2_7" pos="0.0700 0 0.6600"/>
+        <site name="s_0_3_7" pos="0 -0.0700 0.6600"/>
+        <site name="s_0_4_7" pos="0 0.0700 0.6600"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.8400" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.7800" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.7800" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_8" pos="-0.0700 0 0.7800"/>
+        <site name="s_0_2_8" pos="0.0700 0 0.7800"/>
+        <site name="s_0_3_8" pos="0 -0.0700 0.7800"/>
+        <site name="s_0_4_8" pos="0 0.0700 0.7800"/>
+        <body>
+        <geom type="capsule" pos="0 0 0.9600" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 0.9000" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 0.9000" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_9" pos="-0.0700 0 0.9000"/>
+        <site name="s_0_2_9" pos="0.0700 0 0.9000"/>
+        <site name="s_0_3_9" pos="0 -0.0700 0.9000"/>
+        <site name="s_0_4_9" pos="0 0.0700 0.9000"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.0800" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.0200" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.0200" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_10" pos="-0.0700 0 1.0200"/>
+        <site name="s_0_2_10" pos="0.0700 0 1.0200"/>
+        <site name="s_0_3_10" pos="0 -0.0700 1.0200"/>
+        <site name="s_0_4_10" pos="0 0.0700 1.0200"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.2000" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.1400" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.1400" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_0_1_11" pos="-0.0700 0 1.1400"/>
+        <site name="s_0_2_11" pos="0.0700 0 1.1400"/>
+        <site name="s_0_3_11" pos="0 -0.0700 1.1400"/>
+        <site name="s_0_4_11" pos="0 0.0700 1.1400"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.3200" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.2600" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.2600" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_12" pos="-0.0700 0 1.2600"/>
+        <site name="s_1_2_12" pos="0.0700 0 1.2600"/>
+        <site name="s_1_3_12" pos="0 -0.0700 1.2600"/>
+        <site name="s_1_4_12" pos="0 0.0700 1.2600"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.4400" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.3800" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.3800" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_13" pos="-0.0700 0 1.3800"/>
+        <site name="s_1_2_13" pos="0.0700 0 1.3800"/>
+        <site name="s_1_3_13" pos="0 -0.0700 1.3800"/>
+        <site name="s_1_4_13" pos="0 0.0700 1.3800"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.5600" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.5000" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.5000" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_14" pos="-0.0700 0 1.5000"/>
+        <site name="s_1_2_14" pos="0.0700 0 1.5000"/>
+        <site name="s_1_3_14" pos="0 -0.0700 1.5000"/>
+        <site name="s_1_4_14" pos="0 0.0700 1.5000"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.6800" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.6200" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.6200" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_15" pos="-0.0700 0 1.6200"/>
+        <site name="s_1_2_15" pos="0.0700 0 1.6200"/>
+        <site name="s_1_3_15" pos="0 -0.0700 1.6200"/>
+        <site name="s_1_4_15" pos="0 0.0700 1.6200"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.8000" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.7400" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.7400" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_16" pos="-0.0700 0 1.7400"/>
+        <site name="s_1_2_16" pos="0.0700 0 1.7400"/>
+        <site name="s_1_3_16" pos="0 -0.0700 1.7400"/>
+        <site name="s_1_4_16" pos="0 0.0700 1.7400"/>
+        <body>
+        <geom type="capsule" pos="0 0 1.9200" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.8600" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.8600" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_17" pos="-0.0700 0 1.8600"/>
+        <site name="s_1_2_17" pos="0.0700 0 1.8600"/>
+        <site name="s_1_3_17" pos="0 -0.0700 1.8600"/>
+        <site name="s_1_4_17" pos="0 0.0700 1.8600"/>
+        <body>
+        <geom type="capsule" pos="0 0 2.0400" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 1.9800" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 1.9800" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_18" pos="-0.0700 0 1.9800"/>
+        <site name="s_1_2_18" pos="0.0700 0 1.9800"/>
+        <site name="s_1_3_18" pos="0 -0.0700 1.9800"/>
+        <site name="s_1_4_18" pos="0 0.0700 1.9800"/>
+        <body>
+        <geom type="capsule" pos="0 0 2.1600" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 2.1000" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 2.1000" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_19" pos="-0.0700 0 2.1000"/>
+        <site name="s_1_2_19" pos="0.0700 0 2.1000"/>
+        <site name="s_1_3_19" pos="0 -0.0700 2.1000"/>
+        <site name="s_1_4_19" pos="0 0.0700 2.1000"/>
+        <body>
+        <geom type="capsule" pos="0 0 2.2800" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <joint type="hinge" pos="0 0 2.2200" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 2.2200" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_20" pos="-0.0700 0 2.2200"/>
+        <site name="s_1_2_20" pos="0.0700 0 2.2200"/>
+        <site name="s_1_3_20" pos="0 -0.0700 2.2200"/>
+        <site name="s_1_4_20" pos="0 0.0700 2.2200"/>
+        <body>
+        <geom type="capsule" pos="0 0 2.4000" size=".01 .015" density="100" rgba=".8 .2 .1 1"/>
+        <site name="s_1_3_21" pos="0 -0.0700 2.3400"/>
+        <site name="s_1_4_21" pos="0 0.0700 2.3400"/>
+        <joint type="hinge" pos="0 0 2.3400" axis="1 0 0" damping="1.0000" stiffness="0.50"/>
+        <joint type="hinge" pos="0 0 2.3400" axis="0 1 0" damping="1.0000" stiffness="0.50"/>
+        <site name="s_1_1_21" pos="-0.0700 0 2.3400"/>
+        <site name="s_1_2_21" pos="0.0700 0 2.3400"/>
+        <camera name="front_camera" pos="0 0 2.4" axisangle="1 0 0 180"/>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+        </body>
+            <body>
+                <geom type="cylinder" fromto="-0.0700 0.0000 -0.2000 -0.0700 0.0000 -0.2100" size="0.01"/>
+                <joint name="ctrl_1_a" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_1_a" pos="-0.0700 0.0000 -0.2000"/>
+            </body>
+            <body>
+                <geom type="cylinder" fromto="-0.0700 0.0000 -0.5000 -0.0700 0.0000 -0.5100" size="0.01"/>
+                <joint name="ctrl_1_b" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_1_b" pos="-0.0700 0.0000 -0.5000"/>
+            </body>
+
+            <body>
+                <geom type="cylinder" fromto="0.0000 -0.0700 -0.2000 0.0000 -0.0700 -0.2100" size="0.01"/>
+                <joint name="ctrl_2_a" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_2_a" pos="0.0000 -0.0700 -0.2000"/>
+            </body>
+            <body>
+                <geom type="cylinder" fromto="0.0000 -0.0700 -0.5000 0.0000 -0.0700 -0.5100" size="0.01"/>
+                <joint name="ctrl_2_b" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_2_b" pos="0.0000 -0.0700 -0.5000"/>
+            </body>
+
+            <body>
+                <geom type="cylinder" fromto="0.0700 0.0000 -0.2000 0.0700 0.0000 -0.2100" size="0.01"/>
+                <joint name="ctrl_3_a" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_3_a" pos="0.0700 0.0000 -0.2000"/>
+            </body>
+            <body>
+                <geom type="cylinder" fromto="0.0700 0.0000 -0.5000 0.0700 0.0000 -0.5100" size="0.01"/>
+                <joint name="ctrl_3_b" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_3_b" pos="0.0700 0.0000 -0.5000"/>
+            </body>
+
+            <body>
+                <geom type="cylinder" fromto="0.0000 0.0700 -0.2000 0.0000 0.0700 -0.2100" size="0.01"/>
+                <joint name="ctrl_4_a" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_4_a" pos="0.0000 0.0700 -0.2000"/>
+            </body>
+            <body>
+                <geom type="cylinder" fromto="0.0000 0.0700 -0.5000 0.0000 0.0700 -0.5100" size="0.01"/>
+                <joint name="ctrl_4_b" type="slide" axis="0 0 1" limited="true" range="-.1 .1"/>
+                <site name="end_4_b" pos="0.0000 0.0700 -0.5000"/>
+            </body>
+     </body>
+    <camera name="global_camera" pos="0 -3 3" axisangle="1 0 0 90"/>
+    </worldbody>
+    <tendon>
+        <spatial width="0.002" limited="true" range="1.399 1.4">
+            <site site="end_1_a"/>
+        <site site="s_0_1_1"/>
+        <site site="s_0_1_2"/>
+        <site site="s_0_1_3"/>
+        <site site="s_0_1_4"/>
+        <site site="s_0_1_5"/>
+        <site site="s_0_1_6"/>
+        <site site="s_0_1_7"/>
+        <site site="s_0_1_8"/>
+        <site site="s_0_1_9"/>
+        <site site="s_0_1_10"/>
+        <site site="s_0_1_11"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="1.839 1.84">
+            <site site="end_1_b"/>
+        <site site="s_0_1_1"/>
+        <site site="s_0_2_1"/>
+        <site site="s_0_2_2"/>
+        <site site="s_0_2_3"/>
+        <site site="s_0_2_4"/>
+        <site site="s_0_2_5"/>
+        <site site="s_0_2_6"/>
+        <site site="s_0_2_7"/>
+        <site site="s_0_2_8"/>
+        <site site="s_0_2_9"/>
+        <site site="s_0_2_10"/>
+        <site site="s_0_2_11"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="1.399 1.4"> 
+            <site site="end_2_a"/>
+        <site site="s_0_3_1"/>
+        <site site="s_0_3_2"/>
+        <site site="s_0_3_3"/>
+        <site site="s_0_3_4"/>
+        <site site="s_0_3_5"/>
+        <site site="s_0_3_6"/>
+        <site site="s_0_3_7"/>
+        <site site="s_0_3_8"/>
+        <site site="s_0_3_9"/>
+        <site site="s_0_3_10"/>
+        <site site="s_0_3_11"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="1.839 1.84">
+            <site site="end_2_b"/>
+        <site site="s_0_3_1"/>
+        <site site="s_0_4_1"/>
+        <site site="s_0_4_2"/>
+        <site site="s_0_4_3"/>
+        <site site="s_0_4_4"/>
+        <site site="s_0_4_5"/>
+        <site site="s_0_4_6"/>
+        <site site="s_0_4_7"/>
+        <site site="s_0_4_8"/>
+        <site site="s_0_4_9"/>
+        <site site="s_0_4_10"/>
+        <site site="s_0_4_11"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="2.739 2.74">
+            <site site="end_3_a"/>
+        <site site="s_0_2_1"/>
+        <site site="s_0_1_1"/>
+        <site site="s_0_1_2"/>
+        <site site="s_0_1_3"/>
+        <site site="s_0_1_4"/>
+        <site site="s_0_1_5"/>
+        <site site="s_0_1_6"/>
+        <site site="s_0_1_7"/>
+        <site site="s_0_1_8"/>
+        <site site="s_0_1_9"/>
+        <site site="s_0_1_10"/>
+        <site site="s_0_1_11"/>
+        <site site="s_1_1_12"/>
+        <site site="s_1_1_13"/>
+        <site site="s_1_1_14"/>
+        <site site="s_1_1_15"/>
+        <site site="s_1_1_16"/>
+        <site site="s_1_1_17"/>
+        <site site="s_1_1_18"/>
+        <site site="s_1_1_19"/>
+        <site site="s_1_1_20"/>
+        <site site="s_1_1_21"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="2.899 2.9">
+            <site site="end_3_b"/>
+        <site site="s_0_2_1"/>
+        <site site="s_0_2_2"/>
+        <site site="s_0_2_3"/>
+        <site site="s_0_2_4"/>
+        <site site="s_0_2_5"/>
+        <site site="s_0_2_6"/>
+        <site site="s_0_2_7"/>
+        <site site="s_0_2_8"/>
+        <site site="s_0_2_9"/>
+        <site site="s_0_2_10"/>
+        <site site="s_0_2_11"/>
+        <site site="s_1_2_12"/>
+        <site site="s_1_2_13"/>
+        <site site="s_1_2_14"/>
+        <site site="s_1_2_15"/>
+        <site site="s_1_2_16"/>
+        <site site="s_1_2_17"/>
+        <site site="s_1_2_18"/>
+        <site site="s_1_2_19"/>
+        <site site="s_1_2_20"/>
+        <site site="s_1_2_21"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="2.739 2.74"> 
+            <site site="end_4_a"/>
+        <site site="s_0_4_1"/>
+        <site site="s_0_3_1"/>
+        <site site="s_0_3_2"/>
+        <site site="s_0_3_3"/>
+        <site site="s_0_3_4"/>
+        <site site="s_0_3_5"/>
+        <site site="s_0_3_6"/>
+        <site site="s_0_3_7"/>
+        <site site="s_0_3_8"/>
+        <site site="s_0_3_9"/>
+        <site site="s_0_3_10"/>
+        <site site="s_0_3_11"/>
+        <site site="s_1_3_12"/>
+        <site site="s_1_3_13"/>
+        <site site="s_1_3_14"/>
+        <site site="s_1_3_15"/>
+        <site site="s_1_3_16"/>
+        <site site="s_1_3_17"/>
+        <site site="s_1_3_18"/>
+        <site site="s_1_3_19"/>
+        <site site="s_1_3_20"/>
+        <site site="s_1_3_21"/>
+        </spatial>
+        <spatial width="0.002" limited="true" range="2.899 2.9">
+            <site site="end_4_b"/>
+        <site site="s_0_4_1"/>
+        <site site="s_0_4_2"/>
+        <site site="s_0_4_3"/>
+        <site site="s_0_4_4"/>
+        <site site="s_0_4_5"/>
+        <site site="s_0_4_6"/>
+        <site site="s_0_4_7"/>
+        <site site="s_0_4_8"/>
+        <site site="s_0_4_9"/>
+        <site site="s_0_4_10"/>
+        <site site="s_0_4_11"/>
+        <site site="s_1_4_12"/>
+        <site site="s_1_4_13"/>
+        <site site="s_1_4_14"/>
+        <site site="s_1_4_15"/>
+        <site site="s_1_4_16"/>
+        <site site="s_1_4_17"/>
+        <site site="s_1_4_18"/>
+        <site site="s_1_4_19"/>
+        <site site="s_1_4_20"/>
+        <site site="s_1_4_21"/>
+        </spatial>
+    </tendon>
+    <actuator>
+    <!--motor name="ctrl_1" gear="100" joint="ctrl_1" />
+    <motor name="ctrl_2" gear="100" joint="ctrl_2" /-->
+    <position name="ctrl_1_a" gear="50" joint="ctrl_1_a"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_1_b" gear="50" joint="ctrl_1_b"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_2_a" gear="50" joint="ctrl_2_a"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_2_b" gear="50" joint="ctrl_2_b"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_3_a" gear="50" joint="ctrl_3_a"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_3_b" gear="50" joint="ctrl_3_b"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_4_a" gear="50" joint="ctrl_4_a"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    <position name="ctrl_4_b" gear="50" joint="ctrl_4_b"/> <!--ctrllimited="true" ctrlrange="-5 5"/-->
+    </actuator>
+</mujoco>

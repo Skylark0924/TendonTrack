@@ -1,0 +1,39 @@
+<mujoco model="Rope">
+
+    <include file="tendon_scene.xml"/>
+
+    <option timestep="0.002" jacobian="dense"/>
+
+    <size nconmax="100" njmax="300" nstack="50000"/>
+
+    <worldbody>
+	<body>
+            <!--geom type="sphere" pos="0 0 1" size="0.06"/>
+            <joint type="slide" pos="0 0 1" axis="0 1 0"/-->
+		<body name="CB20" pos="0 0 1">
+		    <composite prefix="C" type="rope" count="21 1 1" spacing="0.04" offset="0 0 0">
+		        <joint kind="main" damping="0.05" stiffness="5"/>
+		        <geom type="capsule" size=".01 .015" rgba=".8 .2 .1 1"/> 
+			<!--body>
+		     		<geom name="end1" pos="-0.5 0 0" type="sphere" size="0.01"/>
+		     		<joint pos="-0.5 0 0"/>
+		        </body-->
+		    </composite>
+		    <body>
+		     <geom name="end1" pos="-0.5 0 0" type="sphere" size="0.01"/>
+		     <joint type="hinge" pos="-0.5 0 0"/>
+		    </body>
+		</body>
+		<body>
+		    <geom type="capsule" fromto="-1 -0.2 1 -1 0.2 1" size="0.06"/>
+		    <site name="end2" pos="-1 0 1" type="sphere" size="0.01"/>
+		</body>
+        </body>
+    </worldbody>
+    <!--tendon>
+        <spatial width="0.005">
+            <site site="end1"/>
+            <site site="end2"/>
+        </spatial>
+    </tendon-->
+</mujoco>
