@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Liu Skylark, 122, LIC=V852Z-JJB1C-33VM1-CK8ZJ-26WJN-0AQAZ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.27.1.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+D:\Github\TendonTrack\LowerMachine\USER\Motor_TEST.uvprojx
+Project File Date:  12/09/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling MainProgram.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+MainProgram.c: 1 warning, 0 errors
+compiling usart.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\SYSTEM\usart\usart.c: 1 warning, 0 errors
+compiling delay.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\SYSTEM\delay\delay.c: 1 warning, 0 errors
+compiling LED.C...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\LED\LED.C: 1 warning, 0 errors
+compiling key.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\KEY\key.c: 1 warning, 0 errors
+compiling sys.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\SYSTEM\sys\sys.c: 1 warning, 0 errors
+compiling oled.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\OLED\oled.c: 1 warning, 0 errors
+compiling adc.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\ADC\adc.c: 1 warning, 0 errors
+compiling timer.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\TIMER\timer.c: 1 warning, 0 errors
+compiling motor.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\MOTOR\motor.c: 1 warning, 0 errors
+compiling exti.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\EXTI\exti.c: 1 warning, 0 errors
+compiling encoder.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\ENCODER\encoder.c: 1 warning, 0 errors
+compiling Data_Protocol.C...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\HARDWARE\Data_Protocol\Data_Protocol.C: 1 warning, 0 errors
+compiling control.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\BALANCE\CONTROL\control.c(121): warning:  #177-D: variable "count"  was declared but never referenced
+  	static int tmp,flag,count;
+..\BALANCE\CONTROL\control.c(186): warning:  #177-D: variable "count"  was declared but never referenced
+  	    static u8 count;
+..\BALANCE\CONTROL\control.c: 3 warnings, 0 errors
+compiling show.c...
+..\HARDWARE\Data_Protocol\Data_Protocol.h(12): warning:  #1295-D: Deprecated declaration dataProtocol_Unpack - give arg types
+  float dataProtocol_Unpack();
+..\BALANCE\show\show.c(129): warning:  #223-D: function "memset" declared implicitly
+  			memset(DataReceive_Buff,0,sizeof(DataReceive_Buff));
+..\BALANCE\show\show.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=10714 RO-data=2930 RW-data=180 ZI-data=2804  
+FromELF: creating hex file...
+"..\OBJ\Motor_TEST.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\Keil5\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
